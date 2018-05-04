@@ -1,0 +1,27 @@
+{
+  "name": "GraphQL-PgSQL",
+  "version": "1.0.0",
+  "description": "study for GraphQL and PgSQL",
+  "main": "yufei.xue",
+  "scripts": {
+    "dev": "nodemon server & webpack-dev-server --port 8089 --open --watch --color",
+    "build": "webpack",
+    "test": "npm run start"
+  },
+  "keywords": [
+    "webpack",
+    "study"
+  ],
+  "author": "yufei.xue",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "busboy": "^0.2.14",
+    "graphql": "^0.13.2",
+    "graphql-server-koa": "^1.3.6",
+    "koa": "^2.5.0",
+    "koa-router": "^7.4.0",
+    "koa2-cors": "^2.0.5",
+    "pg": "^7.4.1"
+  }
+}
