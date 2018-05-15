@@ -35,20 +35,7 @@ app.use(cors({
 
 router.get('/', async function(ctx) {
   client.query('select * from student',  function(error, results) {
-
     console.log(error, results)
-
-  });
-  client.query(`CREATE TABLE teacher
-  (
-  id integer NOT NULL,
-  "name" character(100),
-  subjects character(1),
-  CONSTRAINT teacher_key PRIMARY KEY (id)
-)`,  function(error, results) {
-
-    console.log(error, results)
-
   });
 
   console.log('-----------')
